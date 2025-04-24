@@ -38,7 +38,7 @@ include("connection.php");
                         <?php
                         $i    = 1;
                         $data = mysqli_query($conn, "SELECT * FROM  mamber");
-                        $result = mysqli_fetch_assoc($data);
+                        // $result = mysqli_fetch_assoc($data);
                         while ($result = mysqli_fetch_assoc($data)) :
                         ?>
                             <tr>
