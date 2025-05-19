@@ -55,11 +55,18 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                                 </tr>
                                 <tr>
                                     <td>Email:</td>
-                                    <td><input type="text" name="email" class="form-control  mb-3"></td>
+                                    <td><input type="text" name="email" value="<?php echo $row['email']?>" class="form-control  mb-3"></td>
                                 </tr>
                                 <tr>
                                     <td>Password:</td>
                                     <td><input type="text" name="pass" class="form-control  mb-3"></td>
+                                </tr>
+                                <tr>
+                                    <td>Image:</td>
+                                    <td><input type="file" name="image" class="form-control  mb-3">
+                                        <img style="width: 50px; height: 50px;object-fit:cover;" src="./uploads/<?php
+                                            echo $row['image'] ?>" alt="">
+                                    </td>
                                 </tr>
                                 <tr>
                                     <td>Gender:</td>
